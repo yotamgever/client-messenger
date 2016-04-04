@@ -1,6 +1,6 @@
 var io = require('engine.io-client');
 
-var _addr = window.location.protocol + '//' + window.location.host;
+var _addr = window.location.protocol + '//' + window.location.host + ':' + window.location.port;
 
 var socket;
 
@@ -20,7 +20,7 @@ function subscribe(eventName, callback) {
 		data: eventName
 	};
 
-	socket.send(registerEvent);
+	socket.send(JSON.stringify(registerEvent));
 
 	socket.on('message', function(data) {
 		var dataObject = JSON.parse(data);

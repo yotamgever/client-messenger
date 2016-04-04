@@ -1,0 +1,26 @@
+{
+  "name": "client-messenger",
+  "version": "1.0.0",
+  "description": "wrapper for engine.io, enables subscribe to specific events rather than send a 'message' event (similar to socket.io)",
+  "main": "clientMessenger.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yotamgever/client-messenger"
+  },
+  "keywords": [
+    "engine.io",
+    "socket.io"
+  ],
+  "author": "Yotam Roth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yotamgever/client-messenger/issues"
+  },
+  "homepage": "https://github.com/yotamgever/client-messenger",
+  "dependencies": {
+    "engine.io-client": "^1.6.8"
+  }
+}
